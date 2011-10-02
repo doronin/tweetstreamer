@@ -1,0 +1,17 @@
+{
+    "name": "tweetstreamer"
+  , "version": "0.0.1"
+	, "description": "Twitter Streaming API data delivered via websockets"
+	, "author": "Alexey Doronin"
+  , "dependencies": {
+      "express": "2.4.3"
+    , "jqtpl": ">= 1.0.6"
+		, "twitter-node": ">= 0.0.2"
+  }
+	, "devDependencies": {
+			"expresso": ""
+	}
+	, "repository": "git://github.com/doronin/tweetstreamer"
+	, "main": "index"
+	, "engines": { "node": ">= 0.4.1" }
+}

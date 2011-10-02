@@ -1,0 +1,5 @@
+.DS_Store
+logs/*
+pids/*
+sockets/*
+nohup.out

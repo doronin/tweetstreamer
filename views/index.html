@@ -1,0 +1,73 @@
+<div id="content"></div>
+
+<!-- templates -->
+<script id="streamer_template" type="text/template">
+	<div class="streamer">
+		<h2>${title}</h2>
+		<form>
+			<div>
+				<label for="track">Track:</label>
+				<input name="track" value="">
+				<input name="tid" type="hidden" value="">
+				<button type="submit">track</button>
+				<button type="button" name="stop">stop</button>
+			</div>
+		</form>
+		<div class="queries">
+<!--			<a><span class="track" title="track this">twitter</span><span class="remove" title="remove this">[x]</span></a>-->
+		</div>
+		<div class="clear"></div>
+		<span>
+			Comma separated keywords and phrases are logical ORs, phrases are logical ANDs.
+			Words within phrases are delimited by spaces. A tweet matches if any phrase matches.
+			A phrase matches if all of the words are present in the tweet. (e.g. ‘the twitter’ is the AND twitter, and ‘the,twitter’ is the OR twitter.)
+		</span>
+		<ul class="streams"></ul>
+		<pre>
+Problem description
+
+Build a twitter feed reader following these specifications and guidelines:
+
+Server/NodeJS: lookup Twitter feeds or topics via  Twitter API and display them in the frontend in real-time. Should be able to retain the state of the users requests in memory, i.e. if the user adds one feed, then another, the two feeds should be stored so the user can subsequently switch between them. Multiple feeds or topics are merged inline, not split in to two separate timelines.
+
+Client: option to look up new feeds or topics and receive updates in real time. Should be able to add and remove feeds up watch updates in real time.
+
+We would like you to use NodeJS and jQuery and write the entire application in javascript, HTML and CSS. You can use 3rd party libraries for NodeJS, but the only one allowed client-side is jQuery.
+
+It should be possible to use the backend from the command line as well as the frontend. The solution will be graded on modularity, extensibility and readability
+		</pre>
+	</div>
+</script>
+
+<script id="track_template" type="text/template">
+	<a><span class="track" title="track this">{content}</span><span class="remove" title="remove this">[x]</span></a>	
+</script>
+
+<script id="signin_template" type="text/template">
+	<div class="signin_form">
+		<h3>Sign into Twitter</h3>
+		<span class="error hidden"></span>
+		<form>
+			<label for="user">Username</label>
+			<input type="text" name="user" id="user" value="">
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" value="">
+
+			<button type="submit">signin</button>
+		</form>
+	</div>
+</script>
+
+<script id="loading_template" type="text/template">
+	<div class="loading"></div>
+</script>
+
+<script id="popup_template" type="text/template">
+	<div class="popup">
+		<div class="container">
+			<div class="cell">{content}</div>
+		</div>
+	</div>
+</script>
+<!-- templates -->

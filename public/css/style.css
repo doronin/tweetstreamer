@@ -1,0 +1,142 @@
+/* structure */
+html, body { margin: 0; padding: 0; }
+body {
+  font: 14px Helvetica, Arial, sans-serif;
+	background: #efefef;
+}
+	#content {
+		width: 920px;
+		padding: 20px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background: #fff;
+	}
+		#content h2 {
+			text-align:center;
+		}
+
+/* streamer */
+.streamer {}
+	.streamer form > div {
+		width: 660px;
+		margin: 0 auto;
+	}
+		.streamer input {
+			width: 500px;
+		}
+	.streamer > span {
+		font-size: 10px;
+		color: #cecece;
+	}
+	.streamer ul {
+		list-style: none;
+		padding: 0;
+		height: 300px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		word-wrap: break-word;
+	}
+		.streamer li {
+			line-height: 18px;
+		}
+	.streamer .queries {
+		margin-top: 10px;
+	}
+		.streamer .queries a {
+			display: block;
+			float: left;
+			margin-right: 5px;
+			cursor: pointer;
+			background-color: #efefef;
+			padding: 4px;
+		}
+			.streamer .queries a span {
+				color: #cecece;
+			}
+				.streamer .queries a span:hover {
+					color: #333;
+				}
+			.streamer .queries a span.remove {
+				margin-left: 5px;
+			}
+				.streamer .queries a span.remove:hover {
+				}
+	.streamer pre {
+		width: 900px;
+		margin: 0;
+		padding: 10px;
+		background: #efefef;
+		white-space: pre-wrap;
+		font-size: 12px;
+	}
+/* streamer */
+
+
+/* signin */
+.signin_form {
+	width: 300px;
+	height: 240px;
+	padding: 20px;
+	background: #fff;
+	color: #333;
+}
+	.signin_form label, .signin_form button {
+		display: block;
+		margin-top: 10px;
+	}
+	.signin_form label {
+		font-size: 18px;
+	}
+	.signin_form input {
+		width: 100%;
+		height: 20px;
+		line-height: 20px;
+		font-size: 16px;
+	}
+	.signin_form button {
+		width: 100px;
+		font-size: 16px;
+		margin: 20px auto 0 auto;
+	}
+	.signin_form .error {
+		color: red;
+	}
+	.signin_form .hidden {
+		display: none;
+	}
+/* signin */
+
+.loading {
+	width: 160px;
+	height: 25px;
+	background: url(../img/loader.gif);
+}
+
+/* Popup */
+.popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+	.popup .container {
+		display:table;
+		height:100%;
+		margin:0 auto;
+	}
+		.popup .container .cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+			.popup .container .cell > div {
+				margin: 0 auto;
+				overflow-y: auto;
+				position: relative;
+			}
+/* Popup */
+
+/* maintenance */
+.clear { clear: both; }
+/* maintenance */
